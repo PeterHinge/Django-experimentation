@@ -1,0 +1,98 @@
+<head>
+  {% load static %}
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"/>
+  <!-- jQuery -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!--Let browser know the content of the website-->
+  <meta name="description" content="Portfolio for software engineering, artificial intelligence (AI) and machine learning (ML)" />
+  <meta name="author" content="Peter Hinge" />
+  <title>Peter Hinge's Portfolio</title>
+</head>
+
+<body>
+  <nav>
+    <div class="nav-wrapper white black-text">
+      <div class="container">
+        <a href="/" class="brand-logo orange-text text-orange darken-1">
+            <img src="{% static 'images/icons/logo(150x150).png' %}" width="60" height="60">
+        </a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger black-text"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="/" class="black-text">Home</a></li>
+          <li><a href="/all_projects" class="black-text">Projects</a></li>
+          <li><a href="/#about" class="black-text">About</a></li>
+          <li><a href="/#contact" class="black-text">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+    <div class="parallax-container">
+      <div class="parallax"><img src="{% static 'images/pictures/ai1.jpg' %}"></div>
+    </div>
+    <div class="section white">
+      <div class="row container">
+        <h2 class="header">Parallax</h2>
+        <p class="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
+      </div>
+    </div>
+    <div class="parallax-container">
+      <div class="parallax"><img src="{% static 'images/pictures/ai1.jpg' %}"></div>
+    </div>
+
+  <ul class="sidenav blue-grey darken-3" id="mobile-demo">
+    <li><a href="/" class="orange-text text-orange darken-1">Home</a></li>
+    <li><a href="/all_projects" class="orange-text text-orange darken-1">All Projects</a></li>
+    <li><a href="/#about" class="orange-text text-orange darken-1">About</a></li>
+    <li><a href="/#contact" class="orange-text text-orange darken-1">Contact</a></li>
+    <li><a href="{% static "files/cv.pdf" %}" target="_blank" class="btn orange darken-1 black-text"><i class="material-icons left">account_circle</i><strong>RESUME</strong></a></li>
+  </ul>
+
+  <!-- Page content -->
+  <br />
+  <div class="container">
+
+    {% block content %} {% endblock %}
+  </div>
+  <br />
+
+  <footer class="page-footer blue-grey darken-4">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Contact information</h5>
+          <p class="grey-text text-lighten-4">
+            Feel free to give me a call anytime or send me an email.
+          </p>
+          <ul>
+            <li>(+45) 24 26 22 42</li>
+            <li>contactpeterhinge@gmail.com</li>
+          </ul>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">Links</h5>
+          <ul>
+            <li><a href="https://github.com/PeterHinge" target="_blank" class="orange-text text-orange darken-1">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/peter-hinge-443298189/" target="_blank" class="orange-text text-orange darken-1">Linked In</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        © 2019 All projects belong to Peter Hinge.
+      </div>
+    </div>
+  </footer>
+</body>
+
+<script>
+  M.AutoInit();
+</script>
