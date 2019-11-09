@@ -13,10 +13,11 @@
   <!--Let browser know the content of the website-->
   <meta name="description" content="Portfolio for software engineering, artificial intelligence (AI) and machine learning (ML)" />
   <meta name="author" content="Peter Hinge" />
-  <title>Peter Hinge's Portfolio</title>
+  <title>LIRA.AI</title>
 </head>
 
 <body>
+  <!-- Header -->
   <nav>
     <div class="nav-wrapper white black-text">
       <div class="container">
@@ -34,19 +35,6 @@
     </div>
   </nav>
 
-    <div class="parallax-container">
-      <div class="parallax"><img src="{% static 'images/pictures/ai1.jpg' %}"></div>
-    </div>
-    <div class="section white">
-      <div class="row container">
-        <h2 class="header">Parallax</h2>
-        <p class="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
-      </div>
-    </div>
-    <div class="parallax-container">
-      <div class="parallax"><img src="{% static 'images/pictures/ai1.jpg' %}"></div>
-    </div>
-
   <ul class="sidenav blue-grey darken-3" id="mobile-demo">
     <li><a href="/" class="orange-text text-orange darken-1">Home</a></li>
     <li><a href="/all_projects" class="orange-text text-orange darken-1">All Projects</a></li>
@@ -56,13 +44,10 @@
   </ul>
 
   <!-- Page content -->
-  <br />
-  <div class="container">
+  {% block content %}
+  {% endblock %}
 
-    {% block content %} {% endblock %}
-  </div>
-  <br />
-
+  <!-- Footer -->
   <footer class="page-footer blue-grey darken-4">
     <div class="container">
       <div class="row">

@@ -2,6 +2,24 @@
 {% load static %}
 
 {% block content %}
+<section id="parallax">
+    <div class="parallax-container">
+      <div class="parallax"><img src="{% static 'images/pictures/ai3.jpg' %}"></div>
+    </div>
+    <div class="section black">
+      <div class="row container text-white">
+        <h2 class="header white-text">Welcome to LIRA!</h2>
+        <p class="white-text">
+          LIRA is a hub for all things AI (Artificial Intelligence) and in contemporary times this often means ML (Machine Learning).
+          Whether you are new to the field or an experienced ML engineer you'll find LIRA to be platform where you can further hone your skills.
+        </p>
+      </div>
+    </div>
+    <div class="parallax-container">
+      <div class="parallax"><img src="{% static 'images/pictures/ai1.jpg' %}"></div>
+    </div>
+</section>
+
 <section id="featured_projects">
   <h3>Featured Projects: &nbsp <a href="/all_projects" class="btn orange darken-1 black-text"><strong>VIEW ALL PROJECTS</strong></a></h3>
   <br>
